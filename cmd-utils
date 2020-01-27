@@ -9,6 +9,9 @@ find . -type f -size +100M
 Lister tous les processus d'un utilisateur (nom du site sans extension sous cpanel)
 lsof -u nom_utilisateur
 
+Lister les fichiers php qui contiennent un des 3 mot clefs
+grep --include "*.php" -rlE 'viagra|pharma|hacked' .
+
 Montre la charge CPU (-u : affiche les processus d'un utilisateur)
 top -u nom_utilisateur
 
@@ -28,3 +31,4 @@ tar -czvf monArchive.tar.gz monRepertoire/
 
 Décompresser
 tar -xzvf monArchive.tar.gz
+
