@@ -1,0 +1,3 @@
+UNIX CMD :Trouver 20 fichiers lourds d'un dossier 
+
+find  -type f -printf "%s\t%p\n" | sort -n | tail -20
