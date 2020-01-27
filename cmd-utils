@@ -1,3 +1,30 @@
-UNIX CMD :Trouver 20 fichiers lourds d'un dossier 
+UNIX CMD :
 
-find  -type f -printf "%s\t%p\n" | sort -n | tail -20
+Trouver 20 fichiers lourds d'un dossier 
+find .  -type f -printf "%s\t%p\n" | sort -n | tail -20
+
+Trouver tous les fichiers supérieur à 100 mo
+find . -type f -size +100M
+
+Lister tous les processus d'un utilisateur (nom du site sans extension sous cpanel)
+lsof -u nom_utilisateur
+
+Montre la charge CPU (-u : affiche les processus d'un utilisateur)
+top -u nom_utilisateur
+
+
+Affiche l'état des processus en cours.
+-ax tous les processus (BSD)
+-u informations complètes (BSD)
+-e tous les processus (SysV)
+-f informations complètes (SysV)
+-w lignes larges.
+
+ps -aux   (BSD)
+ps -ef    (SysV)
+
+Compresser
+tar -czvf monArchive.tar.gz monRepertoire/
+
+Décompresser
+tar -xzvf monArchive.tar.gz
