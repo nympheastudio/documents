@@ -12,6 +12,24 @@ lsof -u nom_utilisateur
 Lister les fichiers php qui contiennent un des 3 mot clefs
 grep --include "*.php" -rlE 'viagra|pharma|hacked' .
 
+trouver tous les .htaccess dans /var/www
+find /var/www -name ".htaccess"
+
+liste les fichiers dans www par date de dernière modification
+find /www -type f -printf '%TY-%Tm-%Td %TT %p\n' | sort -r
+
+on peut être plus précis en affichant les fichiers modifiés dans le x (ici 50) dernières minutes
+find /target_directory -type f -mmin -50
+
+ou les 24 dernières heures
+find /target_directory -type f -mtime -24
+
+on peut enfin choisir une intervalle (entre hier et avant-hier)
+find /target_directory -type f -mtime -48 ! -mtime -24
+
+last but not least, déplacer les fichiers qui ont plus de 24h (ou modifié il y a plus de 24h)
+find /target_directory -type f -mtime -24
+
 Montre la charge CPU (-u : affiche les processus d'un utilisateur)
 top -u nom_utilisateur
 
