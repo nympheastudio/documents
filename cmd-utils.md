@@ -1,52 +1,52 @@
-**UNIX CMD :**
-
-**Trouver 20 fichiers lourds d'un dossier **
-find .  -type f -printf "%s\t%p\n" | sort -n | tail -20
-
-**Trouver tous les fichiers supérieur à 100 mo**
-find . -type f -size +100M
-
-**Lister tous les processus d'un utilisateur (nom du site sans extension sous cpanel)**
-lsof -u nom_utilisateur
-
-**Lister les fichiers php qui contiennent un des 3 mot clefs**
-grep --include "*.php" -rlE 'viagra|pharma|hacked' .
-
-**trouver tous les .htaccess dans /var/www**
-find /var/www -name ".htaccess"
-
-**liste les fichiers dans www par date de dernière modification**
-find /www -type f -printf '%TY-%Tm-%Td %TT %p\n' | sort -r
-
-**on peut être plus précis en affichant les fichiers modifiés dans le x (ici 50) dernières minutes**
-find /target_directory -type f -mmin -50
-
-**ou les 24 dernières heures**
-find /target_directory -type f -mtime -24
-
-**on peut enfin choisir une intervalle (entre hier et avant-hier)**
-find /target_directory -type f -mtime -48 ! -mtime -24
-
-**last but not least, déplacer les fichiers qui ont plus de 24h (ou modifié il y a plus de 24h)**
-find /target_directory -type f -mtime -24
-
-**Montre la charge CPU (-u : affiche les processus d'un utilisateur)**
-top -u nom_utilisateur
-
-
-**Affiche l'état des processus en cours.**
--ax tous les processus (BSD)
--u informations complètes (BSD)
--e tous les processus (SysV)
--f informations complètes (SysV)
--w lignes larges.
-
-ps -aux   (BSD)
-ps -ef    (SysV)
-
-**Compresser**
-tar -czvf monArchive.tar.gz monRepertoire/
-
-**Décompresse**
-tar -xzvf monArchive.tar.gz
+<br>**UNIX CMD :**
+<br>
+<br>**Trouver 20 fichiers lourds d'un dossier **
+<br>find .  -type f -printf "%s\t%p\n" | sort -n | tail -20
+<br>
+<br>**Trouver tous les fichiers supérieur à 100 mo**
+<br>find . -type f -size +100M
+<br>
+<br>**Lister tous les processus d'un utilisateur (nom du site sans extension sous cpanel)**
+<br>lsof -u nom_utilisateur
+<br>
+<br>**Lister les fichiers php qui contiennent un des 3 mot clefs**
+<br>grep --include "*.php" -rlE 'viagra|pharma|hacked' .
+<br>
+<br>**trouver tous les .htaccess dans /var/www**
+<br>find /var/www -name ".htaccess"
+<br>
+<br>**liste les fichiers dans www par date de dernière modification**
+<br>find /www -type f -printf '%TY-%Tm-%Td %TT %p\n' | sort -r
+<br>
+<br>**on peut être plus précis en affichant les fichiers modifiés dans le x (ici 50) dernières minutes**
+<br>find /target_directory -type f -mmin -50
+<br>
+<br>**ou les 24 dernières heures**
+<br>find /target_directory -type f -mtime -24
+<br>
+<br>**on peut enfin choisir une intervalle (entre hier et avant-hier)**
+<br>find /target_directory -type f -mtime -48 ! -mtime -24
+<br>
+<br>**last but not least, déplacer les fichiers qui ont plus de 24h (ou modifié il y a plus de 24h)**
+<br>find /target_directory -type f -mtime -24
+<br>
+<br>**Montre la charge CPU (-u : affiche les processus d'un utilisateur)**
+<br>top -u nom_utilisateur
+<br>
+<br>
+<br>**Affiche l'état des processus en cours.**
+<br>-ax tous les processus (BSD)
+<br>-u informations complètes (BSD)
+<br>-e tous les processus (SysV)
+<br>-f informations complètes (SysV)
+<br>-w lignes larges.
+<br>
+<br>ps -aux   (BSD)
+<br>ps -ef    (SysV)
+<br>
+<br>**Compresser**
+<br>tar -czvf monArchive.tar.gz monRepertoire/
+<br>
+<br>**Décompresse**
+<br>tar -xzvf monArchive.tar.gz
 
