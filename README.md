@@ -1,3 +1,3 @@
 # documents
 
-Divers documents utiles
+[a relative link](cmd-utils.md)
