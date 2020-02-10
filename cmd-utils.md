@@ -1,6 +1,6 @@
 <br>**UNIX CMD :**
 <br>
-<br>**Trouver 20 fichiers lourds d'un dossier **
+<br>**Trouver 20 fichiers lourds d'un dossier**
 <br>find .  -type f -printf "%s\t%p\n" | sort -n | tail -20
 <br>
 <br>**Trouver tous les fichiers supérieur à 100 mo**
