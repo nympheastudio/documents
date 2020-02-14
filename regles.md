@@ -4,6 +4,8 @@ Préconisations pour une programmation simple et efficace
 
 **Cycle de développement :**
 
+
+
 ```mermaid
 graph LR
 
@@ -21,6 +23,9 @@ F -- KO --> A
 E -- KO --> A
 
 ```
+
+Note :
+install mermaid pour voir les schemas ( https://chrome.google.com/webstore/detail/github-%2B-mermaid/goiiopgdnkogdbjmncgedmgpoajilohe/related )
 
 # Règles générales
 
