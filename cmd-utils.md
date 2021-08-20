@@ -49,4 +49,23 @@
 <br>
 <br>**Décompresse**
 <br>tar -xzvf monArchive.tar.gz
+<br>Renommer rapidement un fichier:
+<br>cp /home/foo/realllylongname.cpp{,-old}
+<br>OU plusieurs
+<br>rename
+
+<br>Example:
+
+<br>$ ls
+<br>this_has_text_to_find_1.txt
+<br>this_has_text_to_find_2.txt
+<br>this_has_text_to_find_3.txt
+<br>this_has_text_to_find_4.txt
+<br>
+<br>$ rename 's/text_to_find/been_renamed/' *.txt
+<br>$ ls
+<br>this_has_been_renamed_1.txt
+<br>this_has_been_renamed_2.txt
+<br>this_has_been_renamed_3.txt
+<br>this_has_been_renamed_4.txt
 
